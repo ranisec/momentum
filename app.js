@@ -5,7 +5,6 @@ function onLoginSubmit(event) {
   event.preventDefault();
   console.log(loginInput.value);
   console.log(loginInput);
-  console.log(loginInput);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
