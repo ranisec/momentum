@@ -9,21 +9,39 @@
 </head>
 
 <body>
-    <form class=hidden id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your~ name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <div id="quote">
-        <span></span>
-        <span></span>
+    <div class="background">
+        <form class="hidden" id="login-form">
+            <input class="wide_input" required maxlength="15" type="text" placeholder="What is your~ name?">
+            <input type="submit" value="Log In">
+        </form>
+        <div class="submain">
+            <div class="submain_greeting">
+                <h1 id="greeting"></h1>
+                <h2 id="clock">00:00:00</h2>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <form id="todo-form">
+                <input class="wide_input" type="text" placeholder="Write your TO-DO and Press Enter" required>
+            </form>
+
+            <ul id="todo-list">
+            </ul>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
-    <a href="https://nomadcoders.co">"Go Website"</a>
     <script src="js/app.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 
 </html>
