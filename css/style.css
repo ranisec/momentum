@@ -13,6 +13,11 @@
 
 .submain_greeting {
   color: whitesmoke;
+  font-style: italic;
+}
+
+#greeting {
+  font-size: 60px;
 }
 
 #todo-form {
@@ -22,13 +27,71 @@
 
 #todo-list {
   padding-right: 120px;
+  font-style: italic;
+  font-size: x-large;
+  color: midnightblue;
+}
+
+#todo-list span {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .rain {
   color: red;
 }
 
+@keyframes appearTodoListInputbox {
+  from {
+    opacity: 0.3;
+    width: 400px;
+  }
+  to {
+    opacity: 1;
+    width: 800px;
+    transform: none;
+  }
+}
+
 .wide_input {
   width: 400px;
+  height: 30px;
   text-align: center;
+  border-radius: 15px;
+  border: none;
+  opacity: 0.3;
+  transition: opacity 0.6s ease, width 0.6s ease;
+}
+
+.wide_input:focus {
+  opacity: 1;
+  width: 800px;
+  animation: appearTodoListInputbox 0.6s else-in-out forwards;
+}
+
+#weather {
+  color: whitesmoke;
+  font-style: italic;
+  font-size: 50px;
+}
+
+#quote {
+  font-style: italic;
+  font-size: xx-large;
+}
+
+#quote span:last-child {
+  font-weight: bold;
+  color: gold;
+}
+
+.linear-gradient {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
